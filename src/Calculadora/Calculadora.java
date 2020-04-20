@@ -13,7 +13,7 @@ public class Calculadora {
 		
 		Scanner teclado = new Scanner(System.in);
 		do {
-			System.out.println("Ingrese su operacion /n1 para sumar /n2 para restar"
+			System.out.println("Ingrese su operacion /n1 para restar/n2 para sumar "
 					+ "/n3 para multiplicar /n4 para dividir:");
 			
 			opcion= teclado.nextInt();
@@ -26,14 +26,15 @@ public class Calculadora {
 		b= teclado.nextInt();
 
 		switch(opcion) {
+		
 		case 1: 
-			resultado= a + b;
+			resultado= a-b;
 			break;
 		
 		case 2: 
-			resultado= a-b;
-			break;
-			
+			resultado= a + b;
+			break;		
+				
 		case 3:
 			resultado= a * b;
 			break;
